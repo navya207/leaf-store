@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | Leaf &amp; Co2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html">Leaf &amp; Co2</a>
+      <div class="nav-links">
+        <a id="shop-link" href="index.html" aria-current="page">Shop</a>
+        <a id="cart-link" href="cart.html">Cart <span id="cart-count" class="cart-count" aria-live="polite">(0)</span></a>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="shop-heading">
+      <h1>Find your kind of green.</h1>
+      <div class="category-field">
+        <label for="category">Category</label>
+        <div class="select-wrap">
+          <select id="category" name="category">
+            <option>All</option>
+            <option>Indoor</option>
+            <option>Outdoor</option>
+            <option>Succulents</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="product-grid" class="product-grid"></div>
+  </main>
+</body>
+</html>

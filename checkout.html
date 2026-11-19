@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Leaf &amp; Co2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html">Leaf &amp; Co2</a>
+      <div class="nav-links">
+        <a id="shop-link" href="index.html">Shop</a>
+        <a id="cart-link" href="cart.html">Cart <span id="cart-count" class="cart-count" aria-live="polite">(0)</span></a>
+      </div>
+    </nav>
+  </header>
+  <main class="container narrow">
+    <h1>Checkout</h1>
+    <form id="checkout-form" class="panel" novalidate>
+      <div class="form-field">
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="full-name" type="text" autocomplete="name" aria-describedby="full-name-error" required>
+        <p id="full-name-error" class="error" aria-live="polite"></p>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required>
+        <p id="email-error" class="error" aria-live="polite"></p>
+      </div>
+      <div class="form-field">
+        <label for="address">Address</label>
+        <input id="address" name="address" type="text" autocomplete="street-address" aria-describedby="address-error" required>
+        <p id="address-error" class="error" aria-live="polite"></p>
+      </div>
+      <button id="place-order" type="submit">Place order</button>
+    </form>
+  </main>
+</body>
+</html>
