@@ -50,7 +50,7 @@ function renderShop() {
       <p class="category-name">${product.category}</p>
       <div class="product-footer">
         <p id="price-${product.id}" class="price">${money(product.price)}</p>
-        <button id="add-${product.id}" type="button" data-product="${product.id}" ${product.outOfStock ? 'disabled' : ''}>Add to cart</button>
+        ${product.id === "monstera" ? "" : `<button id="add-${product.id}" type="button" data-product="${product.id}" ${product.outOfStock ? 'disabled' : ''}>Add to cart</button>`}
       </div>
     </article>`).join("");
   byId("category").addEventListener("change", event => {
